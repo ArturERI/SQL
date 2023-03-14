@@ -1,0 +1,78 @@
+create database Machine
+create table Car
+
+(
+Id int not null primary key,
+Car nvarchar(20),
+Model nvarchar(20),
+Color nvarchar(20),
+EnginePower nvarchar(20),
+CarTypeId nvarchar(20)
+)
+
+
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (1, 'Opel', 'Vectra', 'Blue', '255hp', 'Liftback')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (2, 'Ford', 'Mondeo', 'Black', '220hp', 'Sedan')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (3, 'Mazda', '6', 'Red', '280hp', 'Sedan')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (4, 'Toyota', 'Rav4', 'Black', '175hp', 'SUV')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (5, 'Skoda', 'Octavia', 'Green', '200hp', 'Wagon')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (6, 'Lexus', 'GS350H', 'White', '320hp', 'Sedan')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (7, 'BMW', '535', 'Gray', '345hp', 'Wagon')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (8, 'Audi', 'S4', 'Purple', '220hp', 'Sedan')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (9, 'Volvo', 'FH16', 'Pink', '750hp', 'Truck')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (10, 'Toyota', 'Avensis', 'Gray', '150hp', 'Wagon')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (11, 'Ford', 'Mustang', 'Yellow', '450hp', 'Cabrio')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (12, 'Kia', 'Stinger', 'Orange', '310hp', 'Liftback')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (13, 'Mercedes', 'S500', 'White', '420hp', 'Sedan')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (14, 'Opel', 'Omega', 'Green', '125hp', 'Wagon')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (15, 'Nissan', 'GTR', 'Red', '510hp', 'Coupe')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (16, 'Range Rover', 'SVAutobiography', 'Green', '510hp', 'SUV')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (17, 'Hyundai', 'I20WRC', 'Blue', '380hp', 'Hatchback')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (18, 'Toyota', 'YarisGR', 'Red', '270hp', 'Hatchback')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (19, 'Audi', 'SQ7', 'Pink', '450hp', 'SUV')
+insert into Car (Id, Car, Model, Color, EnginePower, CarTypeId)
+values (20, 'Opel', 'CalibraDTM', 'Yellow', '340hp', 'Coupe')
+
+select * from Car
+
+
+create table CarType
+
+(
+Id int not null primary key,
+CarType nvarchar(20),
+)
+
+insert into CarType (Id, CarType)
+values (1, 'Sedan')
+insert into CarType (Id, CarType)
+values (2, 'Liftback')
+insert into CarType (Id, CarType)
+values (3, 'SUV')
+insert into CarType (Id, CarType)
+values (4, 'Truck')
+insert into CarType (Id, CarType)
+values (5, 'Coupe')
+insert into CarType (Id, CarType)
+values (6, 'Cabrio')
+
+select * from CarType
